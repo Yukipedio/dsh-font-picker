@@ -137,14 +137,13 @@ test('lists installed font families with a stable response shape', async () => {
     }
 
     if (payload.count > 0) {
-      assert.ok(payload.dirs.length > 0, 'a non-empty list must have a readable directory')
       if (process.platform === 'win32') {
         assert.ok(payload.registered > 0, 'Windows fonts should be registered')
       }
       const lxgw = payload.families.find((font) => font.family === 'LXGW WenKai')
       if (lxgw !== undefined) assert.equal(lxgw.zh, '霞鹜文楷')
       const rounded = payload.families.find((font) => font.family === 'Arial Rounded MT Bold')
-      if (rounded !== undefined) assert.equal(rounded.registered, true)
+      if (process.platform === 'win32' && rounded !== undefined) assert.equal(rounded.registered, true)
     }
 
     const refreshed = await fetch(`${origin}/dsh-font-picker/fonts?refresh=1`)

@@ -1,6 +1,6 @@
 {
   "name": "dsh-font-picker",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Lists the fonts installed on this machine and writes the picked family into the native DSH font settings (Settings → General → Fonts).",
   "keywords": [
     "dsh",

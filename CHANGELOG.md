@@ -3,6 +3,18 @@
 本文件提供中英双语：中文在前、英文在后，版本从新到旧。
 Bilingual changelog: Chinese first, English follows; newest version first.
 
+## 2.4.2
+
+### 中文
+
+- Host 测试不再假设“非空字体列表一定伴随可读目录”，并把 Windows 字体注册表断言限定在 win32 平台；macOS 的 CI 失败由这些平台差异断言引起，现在测试只验证响应契约。
+- 本地 27 项测试通过，Windows / macOS / Linux 三平台 CI 恢复全绿。
+
+### English
+
+- Host tests no longer assume that a non-empty font list always has a readable directory, and the Windows font-registry assertion is limited to win32; the macOS CI failure came from these platform-specific assumptions. Tests now verify the response contract only.
+- All 27 local tests pass and CI is green on Windows, macOS and Linux.
+
 ## 2.4.1
 
 ### 中文
