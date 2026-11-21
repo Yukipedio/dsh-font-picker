@@ -1,5 +1,7 @@
 # dsh-font-picker
 
+[![npm version](https://img.shields.io/npm/v/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker) [![npm downloads](https://img.shields.io/npm/dm/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker)
+
 [English](README.en.md) | [简体中文](README.md) | 日本語
 
 DeepSeek Harness（DSH）用のフォントピッカーです。サイドバーの `Aa` を開くと、このマシンにインストールされているフォントの一覧が表示され、選んだフォントを DSH の**標準フォント設定**（設定 → 一般 → フォント）へ書き込みます。本文・コード・ターミナルの 3 つの役割を個別に設定できます。CSS の上書き、フォントファイルの配信、テレメトリーは行いません。

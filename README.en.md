@@ -1,5 +1,7 @@
 # dsh-font-picker
 
+[![npm version](https://img.shields.io/npm/v/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker) [![npm downloads](https://img.shields.io/npm/dm/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker)
+
 English | [简体中文](README.md) | [日本語](README.ja.md)
 
 A font picker for DeepSeek Harness (DSH): open it from the sidebar `Aa` icon, browse the fonts installed on this machine, and write the pick into DSH's **native font settings** (Settings → General → Fonts) for text, code and terminal independently. No CSS overrides, no font files served, no telemetry.

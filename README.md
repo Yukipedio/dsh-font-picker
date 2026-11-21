@@ -1,5 +1,7 @@
 # dsh-font-picker
 
+[![npm version](https://img.shields.io/npm/v/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker) [![npm downloads](https://img.shields.io/npm/dm/dsh-font-picker.svg)](https://www.npmjs.com/package/dsh-font-picker)
+
 [English](README.en.md) | 简体中文 | [日本語](README.ja.md)
 
 DeepSeek Harness（DSH）的字体选择器：左侧栏 `Aa` → 列出本机已安装字体 → 一键写入 DSH 的**原生字体设置**（设置 → 通用 → 字体），正文 / 代码 / 终端三个角色独立。不覆盖 CSS、不注入字体文件、不收集任何数据。
