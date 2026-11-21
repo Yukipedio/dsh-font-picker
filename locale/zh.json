@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "字体选择器",
+    "description": "列出本机已安装字体，点选后写入「设置 → 通用 → 字体」的正文/代码/终端字体设置。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

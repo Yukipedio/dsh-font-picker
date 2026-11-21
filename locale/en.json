@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Font Picker",
+    "description": "Lists installed fonts and writes the picked one into Settings → General → Fonts (text, code, terminal).",
+    "detail": "docs/DETAIL.md"
+  }
+}

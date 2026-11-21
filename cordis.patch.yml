@@ -1,0 +1,6 @@
+- insert:
+    - id: font-picker
+      name: dsh-font-picker
+      config:
+        scanSystemFonts: true
+        extraFontDirs: []
