@@ -3,6 +3,18 @@
 本文件提供中英双语：中文在前、英文在后，版本从新到旧。
 Bilingual changelog: Chinese first, English follows; newest version first.
 
+## 2.4.1
+
+### 中文
+
+- 修复 `/dsh-font-picker/apply` 的处理顺序：现在先检查 settings 服务与 `ui-theme` 条目，再校验字体是否安装。没有原生字体设置的环境会正确返回 503，而不是因为字体不在本机而误报 422。
+- CI 在 Windows / macOS / Linux 三平台恢复全绿（此前 macOS/Linux 的降级测试因处理顺序失败）。
+
+### English
+
+- Fixed the `/dsh-font-picker/apply` handler order: it now checks the settings service and the `ui-theme` entry before validating the font family. Profiles without native font settings correctly receive 503 instead of a misleading 422 for an unknown family.
+- CI is green again on Windows, macOS and Linux (the degradation test previously failed on macOS/Linux because of the handler order).
+
 ## 2.4.0
 
 ### 中文

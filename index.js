@@ -547,6 +547,17 @@ export function apply(ctx, config) {
         return
       }
 
+      const settings = ctx.get('settings')
+      if (settings === undefined) {
+        sendJson(res, 503, { error: 'settings service is not available; cannot write native font settings' })
+        return
+      }
+      const entry = findThemeEntry(settings)
+      if (entry === undefined) {
+        sendJson(res, 503, { error: 'ui-theme settings entry was not found; DSH may be too old for native font settings' })
+        return
+      }
+
       let fonts
       try {
         fonts = await getFonts(false)
@@ -559,16 +570,6 @@ export function apply(ctx, config) {
         return
       }
 
-      const settings = ctx.get('settings')
-      if (settings === undefined) {
-        sendJson(res, 503, { error: 'settings service is not available; cannot write native font settings' })
-        return
-      }
-      const entry = findThemeEntry(settings)
-      if (entry === undefined) {
-        sendJson(res, 503, { error: 'ui-theme settings entry was not found; DSH may be too old for native font settings' })
-        return
-      }
       const family = normalizeFamily(requested)
       try {
         await settings.update(entry.ns, { [FIELDS[role]]: family })

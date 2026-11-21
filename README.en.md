@@ -28,7 +28,7 @@ A font picker for DeepSeek Harness (DSH): open it from the sidebar `Aa` icon, br
 
 ### Option 2: npm
 
-Package name `dsh-font-picker`. If your DSH plugin installer accepts npm install specs, install `dsh-font-picker@2.4.0` directly; otherwise run `npm pack`, unpack the tarball and use Option 1.
+Package name `dsh-font-picker`. If your DSH plugin installer accepts npm install specs, install `dsh-font-picker@latest` directly; otherwise run `npm pack`, unpack the tarball and use Option 1.
 
 ## Usage
 

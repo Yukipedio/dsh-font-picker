@@ -28,7 +28,7 @@ DeepSeek Harness（DSH）用のフォントピッカーです。サイドバー�
 
 ### 方法 2：npm
 
-パッケージ名は `dsh-font-picker` です。DSH のプラグインインストーラーが npm のインストール spec に対応していれば `dsh-font-picker@2.4.0` を直接インストールできます。対応していない場合は `npm pack` で tarball を作成し、展開して方法 1 でインストールしてください。
+パッケージ名は `dsh-font-picker` です。DSH のプラグインインストーラーが npm のインストール spec に対応していれば `dsh-font-picker@latest` を直接インストールできます。対応していない場合は `npm pack` で tarball を作成し、展開して方法 1 でインストールしてください。
 
 ## 使い方
 

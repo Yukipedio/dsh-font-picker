@@ -28,7 +28,7 @@ DeepSeek Harness（DSH）的字体选择器：左侧栏 `Aa` → 列出本机已
 
 ### 方式二：npm
 
-包名 `dsh-font-picker`。若你的 DSH 插件安装器支持 npm 安装 spec，可直接安装 `dsh-font-picker@2.4.0`；否则先 `npm pack`，解压 tarball 后按方式一安装本地目录。
+包名 `dsh-font-picker`。若你的 DSH 插件安装器支持 npm 安装 spec，可直接安装 `dsh-font-picker@latest`；否则先 `npm pack`，解压 tarball 后按方式一安装本地目录。
 
 ## 使用
 
